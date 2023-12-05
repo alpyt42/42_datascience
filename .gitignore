@@ -1,0 +1,22 @@
+# Ignorer les fichiers Python compilés
+*.pyc
+*.pyo
+__pycache__
+
+# Ignorer les fichiers de configuration Python
+*.pyc
+*.pyo
+*.pyd
+
+# Ignorer les fichiers de log
+*.log
+
+# Ignorer les fichiers générés par l'IDE Visual Studio Code
+.vscode/
+
+# Ignorer les fichiers générés par l'IDE PyCharm
+.idea/
+
+# Ignorer les fichiers générés par le système d'exploitation
+.DS_Store
+Thumbs.db
