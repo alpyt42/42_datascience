@@ -1,5 +1,6 @@
 from ft_filter import ft_filter
 import sys
+import string
 
 
 def main():
@@ -7,7 +8,8 @@ def main():
         assert len(sys.argv) == 3, "AssertionError: the arguments are bad"
         assert isinstance(sys.argv[1], str), "AssertionError: the arguments are bad"
         assert sys.argv[2].isdigit(), "AssertionError: the arguments are bad"
-
+        if any(char in string.punctuation for char in sys.argv[1]):
+            raise AssertionError("AssertionError: the arguments are bad")
         textsplit = sys.argv[1].split()
         nb = int(sys.argv[2])
         result = ft_filter(lambda x: len(x) > nb, textsplit)
