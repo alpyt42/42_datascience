@@ -1,0 +1,13 @@
+from load_image import ft_load
+arr = ft_load("/home/alric/Code/42_datascience/p1/Day01/landscape.jpg")
+print(arr[0,0])
+print(arr[0,1])
+print(arr[0,2])
+print()
+print(arr[1,0])
+print(arr[1,1])
+print(arr[1,2])
+print()
+print(arr[len(arr) - 1, len(arr[0]) - 1])
+print()
+print(arr)
